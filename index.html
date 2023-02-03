@@ -28,13 +28,34 @@
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 			/* Media queries */
 			@media (max-width: 600px) {
+				.deal,
+				.logo {
+					float: clear !important;
+					text-align: center !important;
+					margin: 0 auto !important;
+				}
+				.left {
+					float: none !important;
+					margin: 0 auto !important;
+					max-width: 100% !important;
+					text-align: center !important;
+				}
+				.left .col {
+					text-align: center !important;
+				}
+				.logo-wrapper {
+					padding: 0 !important;
+					text-align: center !important;
+					margin: 0 auto !important;
+					float: clear !important;
+				}
 				.two-cols {
 					text-align: center;
 					padding-right: 20px;
 					padding-left: 20px;
 				}
 				.two-cols .col {
-					padding: 0 40px;
+					padding: 0 10px;
 				}
 				.two-cols .col:first-of-type {
 					margin: 0 auto;
@@ -46,6 +67,13 @@
 					text-align: center;
 					display: inline-block;
 					padding-top: 10px;
+				}
+				.three-cols .col tr {
+					text-align: center !important;
+				}
+				.three-cols .col {
+					display: inline !important;
+					text-align: center !important;
 				}
 				.top-bar {
 					height: 10px;
@@ -110,19 +138,21 @@
 						width="100%;"
 					>
 						<table
-							class="col"
+							class="col left"
 							style="
 								border-spacing: 0;
 								width: 100%;
 								max-width: 300px;
 								vertical-align: middle;
 								display: inline;
-								text-align: center;
-								margin-right: 220px;
+								float: left;
 							"
 						>
 							<tr>
-								<td style="padding: 0">
+								<td
+									style="padding: 0 0 0 40px"
+									class="logo-wrapper"
+								>
 									<a href="#" style="text-decoration: none"
 										><img
 											class="logo"
@@ -150,7 +180,11 @@
 							"
 						>
 							<tr>
-								<td width="100%" style="padding: 0">
+								<td
+									width="100%"
+									style="padding: 5px 0 0 0"
+									class="deal"
+								>
 									<a
 										href="#"
 										style="
